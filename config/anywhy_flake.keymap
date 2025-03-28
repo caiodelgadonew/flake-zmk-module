@@ -6,9 +6,10 @@
     combos {
         compatible = "zmk,combos";
 
-        layer3 {
-            bindings = <&mo 3>;
+        mo1_mo2_combo {
+            timeout-ms = <150>;
             key-positions = <39 42>;
+            bindings = <&mo 3>;
         };
     };
 
@@ -94,6 +95,7 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
     };
 
     keymap {
@@ -113,7 +115,7 @@
 &kp TAB         &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
 &kp LCTRL       &none   &none   &none     &none   &none        &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none   &kp PRINTSCREEN
 &kp LEFT_SHIFT  &none   &none   &none     &none   &none        &none     &none     &none     &none      &none   &kp ESCAPE
-                &trans  &trans  &kp LGUI  &trans  &kp SPACE    &kp RET   &mo 3     &kp RALT  &trans     &trans
+                &trans  &trans  &kp LGUI  &trans  &kp SPACE    &kp RET   &trans    &kp RALT  &trans     &trans
             >;
         };
 
@@ -122,7 +124,7 @@
 &kp TAB         &kp EXCL  &kp AT_SIGN    &kp HASH  &kp DOLLAR  &kp PERCENT       &kp CARET      &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
 &kp LCTRL       &kp HOME  &kp PAGE_UP    &none     &none       &none             &kp MINUS      &kp EQUAL      &kp LBKT        &kp RBKT              &kp BSLH               &kp GRAVE
 &kp LEFT_SHIFT  &kp END   &kp PAGE_DOWN  &none     &none       &studio_unlock    &kp LS(MINUS)  &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &kp TILDE
-                &trans    &trans         &kp LGUI  &mo 3       &kp SPACE         &kp RET        &trans         &kp RALT        &trans                &trans
+                &trans    &trans         &kp LGUI  &trans      &kp SPACE         &kp RET        &trans         &kp RALT        &trans                &trans
             >;
         };
 
