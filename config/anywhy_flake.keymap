@@ -3,16 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        mo1_mo2_combo {
-            timeout-ms = <150>;
-            key-positions = <39 42>;
-            bindings = <&mo 3>;
-        };
-    };
-
     macros {
         bt_clr_0: bt_clr_0 {
             compatible = "zmk,behavior-macro";
@@ -95,7 +85,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
     };
 
     keymap {
@@ -135,6 +124,15 @@
 &kp LSHFT  &none   &none      &kp F7    &kp F8  &kp F9       &trans   &kp K_PREVIOUS     &kp K_NEXT       &kp K_PLAY_PAUSE  &kp C_PLAY_PAUSE  &kp ESC
            &trans  &trans     &kp LGUI  &trans  &kp SPACE    &kp RET  &trans             &kp RIGHT_ALT    &trans            &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        layer_3 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
