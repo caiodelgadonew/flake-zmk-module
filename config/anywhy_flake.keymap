@@ -126,10 +126,10 @@
 
         special {
             bindings = <
-&kp TAB         &kp EXCL  &kp AT_SIGN    &kp HASH  &kp DOLLAR  &kp PERCENT       &kp CARET       &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
-&kp LCTRL       &kp HOME  &kp PAGE_UP    &none     &none       &none             &kp UNDERSCORE  &kp EQUAL      &kp LBKT        &kp RBKT              &kp BSLH               &kp GRAVE
-&kp LEFT_SHIFT  &kp END   &kp PAGE_DOWN  &none     &none       &studio_unlock    &kp MINUS       &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &kp TILDE
-                &trans    &trans         &kp LGUI  &mo 3       &kp SPACE         &kp RET         &mo 2          &kp RALT        &trans                &trans
+&kp TAB         &kp EXCL  &kp AT_SIGN    &kp HASH  &kp DOLLAR  &kp PERCENT       &kp CARET      &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
+&kp LCTRL       &kp HOME  &kp PAGE_UP    &none     &none       &none             &kp MINUS      &kp EQUAL      &kp LBKT        &kp RBKT              &kp BSLH               &kp GRAVE
+&kp LEFT_SHIFT  &kp END   &kp PAGE_DOWN  &none     &none       &studio_unlock    &kp LS(MINUS)  &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &kp TILDE
+                &trans    &trans         &kp LGUI  &mo 3       &kp SPACE         &kp RET        &mo 2          &kp RALT        &trans                &trans
             >;
         };
 
